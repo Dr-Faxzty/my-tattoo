@@ -9,8 +9,12 @@ body { background-color: #141414 }
 
 h1 { font-size: 3rem; }
 h2 { font-size: 2.5rem; }
-p { font-size: 1rem; }
 ul { margin-left: 3rem; }
+img {
+    height: 700px;
+    width: 500px;
+    object-fit: cover;
+}
 
 header {
     width: 100%;
@@ -20,6 +24,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 main {
@@ -47,5 +52,14 @@ main {
     justify-content: center;
     align-items: left;
     text-align: left;
+    font-size: 1.5rem;
 }
 
+@media screen and (max-width: 600px) {
+    img {
+        height: 500px;
+        width: 300px;
+    }
+
+    .description { font-size: 1rem; }
+}
