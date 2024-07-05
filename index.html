@@ -5,7 +5,72 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" href="/tattoo-icon.png" type="image/x-icon">
 		<title>My Tattoos</title>
-		<link href='/style.css' rel='stylesheet'>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+
+			body { background-color: #141414 }
+
+			h1 { font-size: 3rem; }
+			h2 { font-size: 2.5rem; }
+			ul { margin-left: 3rem; }
+			img {
+				height: 700px;
+				width: 500px;
+				object-fit: cover;
+			}
+
+			header {
+				width: 100%;
+				height: 200px;
+				background-color: #FFFF00;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+			}
+
+			main {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				color: #fff;
+			}
+
+			.wrapper {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				padding: 24px;
+				gap: 16px;
+			}
+
+			.description { 
+				width: 80%; 
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: left;
+				text-align: left;
+				font-size: 1.5rem;
+			}
+
+			@media screen and (max-width: 600px) {
+				img {
+					height: 500px;
+					width: 300px;
+				}
+
+				.description { font-size: 1rem; }
+			}
+		</style>
 	</head>
 
 	<body>
@@ -37,5 +102,3 @@
 		</main>
 	</body>
 </html>
-
-
